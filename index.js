@@ -34,3 +34,23 @@ function getComputerChoice() {
         return 'Scissors';
     }
 }
+
+compareChoices();
+
+function compareChoices(userChoice,computerChoice) {
+    if(userChoice === computerChoice){
+        return "Tie";
+    }
+    else if(userChoice == 'Rock' && computerChoice == 'Paper'){
+        return 'Computer Win';
+    }
+    else if(userChoice == 'Paper' && computerChoice == 'Scissors'){
+        return 'Computer Win';
+    }
+    else if(userChoice == 'Scissors' && computerChoice == 'Rock'){
+        return 'Computer Win';
+    }
+    else{
+        return 'User Wins';
+    }
+}
