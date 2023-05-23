@@ -1,6 +1,5 @@
 getUserChoice();
 
-
 function getUserChoice(input) {
     let userChoice = prompt("Enter Your Choice: (Rock,Paper or Scissors)");
     userChoice = userChoice.toLowerCase();
@@ -15,5 +14,23 @@ function getUserChoice(input) {
     }
     else{
         return 'Invalid choice';
+    }
+}
+
+getComputerChoice();
+
+function getComputerChoice() {
+    let computerChoice = Math.floor(Math.random()*3);
+    if(computerChoice === 0)
+    {
+        return 'Rock';
+    }
+    else if(computerChoice === 1)
+    {
+        return 'Paper';
+    }
+    else
+    {
+        return 'Scissors';
     }
 }
